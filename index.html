@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Password</title>
 
-    <link rel="stylesheet" href="../assets/css/reset.css">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" ></script>
 
 </head>
 
@@ -24,16 +25,16 @@
             <h1>Generate random Password</h1>
         </a>
     </nav>    
-
-    <div class="row">       
-
+    <div class="container">
+      <div class="row">       
         <div class="col-md-6 col-sm-12">
             <label><h4>Random Password Generator:</h4></label>
-            <input name="Pwd" type="text" value=""></input>
+            <input id="display" type="text" value=""></input>
             <br>
-            <button type="display">Generate</button>
-            <button type="copy" >Copy to clipboard</button>
+            <button onclick="display">Generate</button>
+            <button onclick="copy" >Copy to clipboard</button>
         </div>
+      </div> 
        
     </div>
      
