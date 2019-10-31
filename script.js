@@ -9,12 +9,12 @@ var Char = "";
 
 // Function to validate user's input
 function validUerinput() {
-    while (pwdLength <8 || pwdLength> 128 || pwdLength === " ") {
+    while (pwdLength < 8 || pwdLength > 128 || pwdLength === " "){
 
-            pwdLength = prompt("Please enter a valid password, between 8 & 128 characters");
-        
+        pwdLength = prompt("Please enter a valid password, between 8 & 128 characters");
+
     }
-    var special = confirm("Do you want your password to contain special characters?")
+    var special = confirm("Do you want your password to contain special characters")
     if (special === true) {
         Char += specialChar;
     }
@@ -42,13 +42,18 @@ function validUerinput() {
 }
 validUerinput();
 
-    // Funtion to generate the random password
-    function generatePwd(Char, pwdLength) {
-        var password = "";
-        for (i = 0; i <= pwdLength; i++) {
-            password += Char.charAt(Math.floor(Math.random() * Char.length));
-        }
-        console.log(password);
-        return password;
+// Funtion to generate the random password
+function generatePwd() {
+    var password = "";
+    for (i = 0; i <= pwdLength; i++) {
+        password += Char.charAt(Math.floor(Math.random() * Char.length));
     }
-generatePwd(Char, pwdLength);
+    // add password the generate button
+    document.getElementById("displayPwd").value=password;
+}
+
+// Function copy password
+function copyFunction() {
+    document.getElementById("displayPwd").select();
+    document.execCommand("copy");
+}

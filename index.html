@@ -13,7 +13,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" ></script>
+    
 
 </head>
 
@@ -27,12 +27,12 @@
     </nav>    
     <div class="container">
       <div class="row">       
-        <div class="col-md-6 col-sm-12">
+        <div class="col-md-8 col-sm-12">
             <label><h4>Random Password Generator:</h4></label>
-            <input id="display" type="text" value=""></input>
+            <input type="text" id="displayPwd"></input>
             <br>
-            <button onclick="display">Generate</button>
-            <button onclick="copy" >Copy to clipboard</button>
+            <button onclick="generatePwd()">Generate</button>
+            <button onclick="copyFunction()" >Copy to clipboard</button>
         </div>
       </div> 
        
@@ -40,7 +40,7 @@
      
 
     </div>
-
+<script src="script.js" ></script>
 </body>
 
 </html>

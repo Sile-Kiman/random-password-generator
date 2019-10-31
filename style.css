@@ -6,7 +6,13 @@
     margin: 0 auto;
     margin-top: 30px;
 }
-.container
+.container{
+    width: 100%;
+    background:blue;
+    padding: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
 
 input[type=text]{
     width: 100%;
