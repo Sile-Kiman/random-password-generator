@@ -1,22 +1,48 @@
 
-.col-md-6{
-    width: 100%;
-    background:blue;
-    padding: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
+#button1{
+    padding: 10px;
+    background: red;
+    width: 30%;
+    margin-right: 240px;
 }
+
+#button2{
+    padding: 10px;
+    background:blue;
+    /* right: 250px; */
+}
+
 .container{
     width: 100%;
-    background:blue;
+    /* background:blue; */
     padding: 100px;
     margin: 0 auto;
     margin-top: 30px;
+    
 }
 
 input[type=text]{
     width: 100%;
-    padding: 5px;
+    padding: 70px;
     margin-bottom: 20px;
+    border: blue solid 3px;
 
+}
+@media only screen 
+and (min-width:320px) 
+and (max-width:1200px) {
+
+    #button1{
+        padding-right: 10px;
+        background: red;
+        width: 35%; 
+        
+}
+#button2{
+    padding: 10px;
+    background:blue;
+    float: right;
+    margin-top: -50px;;
+}
+ 
 }
