@@ -32,7 +32,7 @@ Test:
 3-Verify the Min and max character validation is in place. 
 
 Image of the Site:
-
+![alt text](random.PNG)
 
 License:
 MIT License
