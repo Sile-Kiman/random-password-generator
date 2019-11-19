@@ -2,47 +2,53 @@
 #button1{
     padding: 10px;
     background: red;
-    width: 30%;
-    margin-right: 240px;
+    margin-bottom: 10px;
+     
 }
 
 #button2{
     padding: 10px;
     background:blue;
-    /* right: 250px; */
+    margin-bottom: 10px;
+     
 }
 
 .container{
     width: 100%;
-    /* background:blue; */
     padding: 100px;
     margin: 0 auto;
     margin-top: 30px;
     
 }
 
-input[type=text]{
+ textarea{
     width: 100%;
-    padding: 70px;
+    padding: 80px; 
     margin-bottom: 20px;
     border: blue solid 3px;
+    /* word-wrap: break-word; */
+    word-wrap: break-word;
+    text-align: justify;
 
 }
 @media only screen 
 and (min-width:320px) 
-and (max-width:1200px) {
+and (max-width:740px) {
 
     #button1{
         padding-right: 10px;
         background: red;
-        width: 35%; 
+        width: 100%;
         
-}
+      }
 #button2{
     padding: 10px;
     background:blue;
-    float: right;
-    margin-top: -50px;;
+    margin: 0px;
+    width: 100%;
 }
- 
-}
+  textarea{
+    width: 100%;
+     /* ??padding0px;  */
+ }
+} 
